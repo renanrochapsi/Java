@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ContaBanco {
     public static void main(String[] args){
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner();
 
         System.out.print("Digite o nº da sua sua agência: ");
         String agencia  = scanner.nextLine();
@@ -25,7 +25,6 @@ public class ContaBanco {
         } else {
             System.out.println("Senha incorreta");
         }
-
 
         scanner.close();
     }
