@@ -1,6 +1,9 @@
 package fundamentos.aprendendoasintaxe.desafiocontaterminal;
 import java.util.Scanner;
 public class ContaBanco {
+
+    public static Transacoes deposito = new Transacoes();
+
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
@@ -19,15 +22,25 @@ public class ContaBanco {
         int senha  = scanner.nextInt();
         scanner.nextLine();
 
-        double saldo = 56.70;
+        double saldoAtual = 56.70;
+
+        double deposito1 = deposito.depositar(58.00);
+
+                
+
+
+
+
+        // a ideia é fazer um array de TRANSACOES(DEPOSITOS E SAQUES)
+        double saldoFinal = saldoAtual + deposito1;
+
 
         if (senha == 1547) {
             System.out.println("Parabéns, você está conectado!");
-            System.out.println("Seu saldo é de R$ " + saldo + " reais.");
+            System.out.println("Seu saldo é de R$ " + saldoFinal + " reais.");
             } else {
             System.out.println("Senha incorreta!");
             }
-
 
         scanner.close();
     }
