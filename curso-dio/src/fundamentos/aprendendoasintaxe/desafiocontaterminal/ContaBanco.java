@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ContaBanco {
     public static void main(String[] args){
 
-        Scanner scanner = new Scanner();
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite o nº da sua sua agência: ");
         String agencia  = scanner.nextLine();
@@ -19,16 +19,19 @@ public class ContaBanco {
         int senha  = scanner.nextInt();
         scanner.nextLine();
 
+        double saldo = 56.70;
 
         if (senha == 1547) {
-            System.out.println("Parabéns, você está conectado");
-        } else {
-            System.out.println("Senha incorreta");
-        }
+            System.out.println("Parabéns, você está conectado!");
+            System.out.println("Seu saldo é de R$ " + saldo + " reais.");
+            } else {
+            System.out.println("Senha incorreta!");
+            }
+
 
         scanner.close();
     }
 
 }
 
-// Minha contribuição ao código irá ser colocar uma senha no sistema
+// coloquei o saldo como já pré definido, e adicionei opção de senha para incrementar.

@@ -2,7 +2,7 @@ package ScannerAsFuck;
 
 import java.util.Scanner;
 
-public class ScanEverything {
+public class GeneralScanner {
 
     Scanner scanner = new Scanner(System.in);
 
